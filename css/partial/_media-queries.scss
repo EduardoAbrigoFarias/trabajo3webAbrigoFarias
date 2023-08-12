@@ -1,0 +1,19 @@
+@mixin desktop {
+  //  @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+   // @media screen and (min-width: 767) {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin mediaquery($ancho) {
+    @media screen and (max-width: #{$ancho}) {
+        @content;
+    }
+}

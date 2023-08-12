@@ -1,0 +1,54 @@
+/**********************************************/
+/*************  Transicion de Titulos H...2,3*/
+/*********************************************/
+.square {
+  width: 100%;
+  height: 60px;
+  border-radius: 8px;
+  background-color: rgb(173, 165, 224);
+  transition-duration: 1000ms;
+  transition-timing-function: ease;
+  padding: 8px;
+}
+.square.tp-transform {
+  transition-property: transform;
+}
+.square.tp-color {
+  transition-property: background-color;
+}
+.square.tp-both {
+  transition-property: background-color, transform;
+}
+.square.tp-none {
+  transition-property: none;
+}
+.square:is(:hover, :focus) {
+  transform: scale(1.3);
+  background-color: cornflowerblue;
+}
+
+.squaretit {
+  width: 50%;
+  height: 70px;
+  border-radius: 8px;
+  background-color: rgb(173, 165, 224);
+  transition-duration: 1000ms;
+  transition-timing-function: ease;
+  padding: 8px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 3px;
+}
+.wrapper .square:nth-child(odd) {
+  justify-self: end;
+}
+.wrapper .square:nth-child(even) {
+  justify-self: start;
+}
+
+/*****************************************/
+/*************  TERMINO Transicion */
+/***************************************//*# sourceMappingURL=square.css.map */

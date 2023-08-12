@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluciones Tecnologicas</title>
+    <meta name="description" content="Boleta Factura electronica Documentos electronicos punto de ventas">
+    <meta name="keywords" content="BOLETA ELECTRONICA,FACTURA ELECTRONICA, DOCUMENTOS ELECTRONICOS, PROYECTOS TI, DESARROLLO WEB,ASESORIA, PUNTO DE VENTAS, ERP, CRM">    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+ <main>  
+    <header class="header">
+        <a href="#" class="conlogo">Contacto</a>
+        <input type="checkbox" id="side-menu" class="side-menu">
+        <label for="side-menu" class="hamb"><span class="hamb-line"></span></label>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./clientes.html">Clientes</a></li>
+                <li><a href="./staf.html">Staff</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>                
+            </ul>
+        </nav>
+        <h5 class="conh2 wrapper square">COMO PODEMOS AYUDARTE</h5>
+    </header>
+
+    <div class="map" data-aos="flip-left">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4075.8212217787764!2d-70.67752439233115!3d-33.42914477805404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c449f8c7f833%3A0x7139ac0d30fa4263!2sLibertad%201403%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1664986194979!5m2!1ses!2scl">              
+        </iframe>
+    </div>                   
+
+    <h3 class="conh3">Contáctanos soluciones@gmail.com. Fono + 56 988765345</h3>    
+        
+    <div class="container" data-aos="flip-left">
+        <form >      
+            <label for="iname">Tu Nombre</label>
+            <input type="text" id="iname" name="iname" placeholder="Tu nombre..." required>        
+            <label for="imail">Tu mail</label>
+            <input type="text" id="imail" name="imail" placeholder="Tu mail..." required>
+            <label for="icelu">Número celular</label>
+            <input type="text" id="icelu" name="icelu" placeholder="Tu celular.." required>
+            <label for="icome">Comentarios</label>
+            <textarea id="icome" name="icome" placeholder="Tus comentarios..." style="height:200px"></textarea>
+        
+            <input value="        Ingresar datos" onclick="toastFunction()">
+            <div id="snackbar">Correo enviado.Te contactaremos!</div>
+        </form>
+        </div>
+            
+        <footer data-aos="flip-left">
+            <h2 class="h2footer">Estás a punto de mejorar la gestión de tu negocio</h2>
+             <div class="icons-copyright">
+                 <div class="icons">
+                     <i class="bi bi-facebook"></i>
+                     <i class="bi bi-twitter"></i>
+                     <i class="bi bi-pinterest"></i>
+                     <i class="bi bi-instagram"></i>
+                 </div>
+                 <p class="copyright">© 2023 Soluciones de Desarrollo y Tecnologia.</p>
+             </div>
+        </footer>
+    
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    </main>
+</html>

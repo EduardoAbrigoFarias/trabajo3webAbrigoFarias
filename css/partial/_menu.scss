@@ -1,0 +1,83 @@
+
+.nav{
+    width: 100%;
+    position: relative;
+    background-color: var(--green);
+    overflow: hidden;
+    max-height: 0; 
+    transition: max-height 0.5s ease-out;
+    z-index: 1;
+    display: block;
+  
+  }
+  
+  .menu a{
+    margin-top:20px;
+    display: block;
+    padding: 20px;
+    color: var(--white); 
+    font-weight: bold;
+    font-size: 15px;    
+  
+    &:hover{
+      background-color: var(--green-light);
+    }
+    
+  }
+  
+  .hamb{
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+  }
+  
+  .hamb-line {
+    background: var(--white);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+  
+    &::before,
+    &::after
+    {
+      background: var(--white);
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+      }
+  
+      &::before{
+        top: 5px;
+      }
+      &::after{
+        top: -5px;
+      }
+   }
+  
+  .side-menu {
+    display: none;
+  
+    &:checked ~ nav{
+      max-height: 100%;
+    }
+  
+    &:checked ~ .hamb .hamb-line 
+    {
+    background: transparent;
+    }
+  
+    &:checked ~ .hamb .hamb-line::before {
+      transform: rotate(-45deg);
+      top:0;
+    }
+    
+    &:checked ~ .hamb .hamb-line::after {
+      transform: rotate(45deg);
+      top:0;
+    }  
+  }
+  
