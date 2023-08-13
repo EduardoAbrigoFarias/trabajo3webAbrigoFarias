@@ -529,7 +529,7 @@ div.services {
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
-    resize: vertical; /* resize textarea de la zona de contacto*/;
+    resize: vertical; 
   }
 
     input[type=submit] {
